@@ -105,11 +105,24 @@ header .nav_bx .navbar-nav li a::after {
 	-moz-transform: translateY(10px);
 	transform: translateY(10px)
 }
-header .nav_bx .navbar-nav li a:hover::after, header .nav_bx .navbar-nav li.active a::after {
+header .nav_bx .navbar-nav li a:hover::after, header .nav_bx .navbar-nav li.active a::after,
+header .nav_bx .navbar-nav li a.lang_link:hover::after, header .nav_bx .navbar-nav li.active a.lang_link::after {
 	opacity: 1;
 	-webkit-transform: translateY(0px);
 	-moz-transform: translateY(0px);
 	transform: translateY(0px)
+}
+header .nav_bx .navbar-nav li a.lang_link{
+	background: #fec731 !important;
+	color: #fff;
+	border-radius: 25px;
+}
+header .nav_bx .navbar-nav li a.lang_link::after{
+	border: 1px solid #fff;
+}
+header .nav_bx .navbar-nav li a.lang_link:hover {
+	background: #fff !important;
+	color: #fec731 !important;
 }
 header .serv_tog {
 	display: none;
@@ -1229,12 +1242,12 @@ footer .bottom_footer {
 	transition: transform .3s ease-in-out
 }
 .host_plan_bx .host_bx {
-	background-color: #80C6F9;
-	background-image: -moz-linear-gradient( right, #80C6F9, #8DE4DC 90%);
-	background-image: -webkit-linear-gradient( right, #80C6F9, #8DE4DC 90%);
-	background-image: -o-linear-gradient( right, #80C6F9, #8DE4DC 90%);
-	background-image: -ms-linear-gradient( right, #80C6F9, #8DE4DC 90%);
-	background-image: linear-gradient( right, #80C6F9, #8DE4DC 90%);
+	background-color: #018bee;
+	background-image: -moz-linear-gradient( right, #018bee, #1cc9b8 90%);
+	background-image: -webkit-linear-gradient( right, #018bee, #1cc9b8 90%);
+	background-image: -o-linear-gradient( right, #018bee, #1cc9b8 90%);
+	background-image: -ms-linear-gradient( right, #018bee, #1cc9b8 90%);
+	background-image: linear-gradient( right, #018bee, #1cc9b8 90%);
 	color: #fff;
 	border-radius: 5px;
 	padding-bottom: 20px;
@@ -2309,9 +2322,21 @@ font-size:1.em;
 	min-height: inherit !important;
 	height: 400px
 }
+.breadcrumb_haf .breadcrumb_bx {
+	text-align: center;
+	color: #fff;
+	height: calc(400px - 103px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .breadcrumb_bx {
 	text-align: center;
-	color: #fff
+	color: #fff;
+	height: calc(100vh - 103px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .breadcrumb_bx h1 {
 	font-size: 2em;
@@ -2332,9 +2357,9 @@ font-size:1.em;
 	line-height: 30px;
 	overflow: hidden
 }
-.breadcrumb_haf .breadcrumb_bx h1 {
+/* .breadcrumb_haf .breadcrumb_bx h1 {
 	padding: 80px 0 20px
-}
+} */
 .breadcrumb_bx a {
 	display: block;
 	width: 200px;
@@ -2388,12 +2413,12 @@ i.fa-check-circle-o:before {
 	margin: 0px auto
 }
 .contact_pg .tab-content .my_serv, .contact_pg .tab-content .my_buyrange, .contact_pg .tab-content .my_message {
-	background-color: #57BFEA;
-	background-image: -moz-linear-gradient( right, #57BFEA, #64DAD2 90%);
-	background-image: -webkit-linear-gradient( right, #57BFEA, #64DAD2 90%);
-	background-image: -o-linear-gradient( right, #57BFEA, #64DAD2 90%);
-	background-image: -ms-linear-gradient( right, #57BFEA, #64DAD2 90%);
-	background-image: linear-gradient( right, #57BFEA, #64DAD2 90%);
+	background-color: #018bee;
+	background-image: -moz-linear-gradient( right, #018bee, #1cc9b8 90%);
+	background-image: -webkit-linear-gradient( right, #018bee, #1cc9b8 90%);
+	background-image: -o-linear-gradient( right, #018bee, #1cc9b8 90%);
+	background-image: -ms-linear-gradient( right, #018bee, #1cc9b8 90%);
+	background-image: linear-gradient( right, #018bee, #1cc9b8 90%);
 	padding: 20px;
 	box-shadow: 0px 0px 20px -8px #888
 }
