@@ -190,6 +190,12 @@ header .serv_tog ul li a:hover h1, header .serv_tog ul li.active a h1 {
 	color: #fff;
 	transition: all 0.6s ease-in-out
 }
+.slider_bx{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: calc(100vh - 103px);
+}
 .slider_bx .item {
 	height: 500px;
 	text-align: right
